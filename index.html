@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Landing Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">🍽️ TASTY HOTEL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section text-center text-white d-flex justify-content-center align-items-center">
+    <div>
+      <h1>Welcome to TASTY HOTEL</h1>
+      <p>Your favorite meals delivered with love!</p>
+      <a href="#order-section" class="btn btn-primary btn-lg mt-4">Order Now</a>
+    </div>
+  </header>
+
+  <!-- Order Section -->
+  <section id="order-section" class="container my-5">
+    <h2 class="text-center">Our Menu</h2>
+    <div class="row g-4">
+      <!-- Food Item 1 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="pizza.jpg" class="card-img-top" alt="Pizza">
+          <div class="card-body">
+            <h5 class="card-title">Pizza</h5>
+            <p class="card-text">Delicious cheesy pizza with fresh toppings.</p>
+            <div class="d-flex justify-content-between">
+              <span>Price:Rs/= 130</span>
+              <input type="number" class="form-control quantity" placeholder="Qty" min="0">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Food Item 2 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="salad.png" class="card-img-top" alt="Burger">
+          <div class="card-body">
+            <h5 class="card-title">Salad</h5>
+            <p class="card-text">Juicy burger with crispy fries.</p>
+            <div class="d-flex justify-content-between">
+              <span>Price:Rs/= 130</span>
+              <input type="number" class="form-control quantity" placeholder="Qty" min="0">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Food Item 3 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="pasta.png" class="card-img-top" alt="Pasta">
+          <div class="card-body">
+            <h5 class="card-title">Pasta</h5>
+            <p class="card-text">Creamy pasta with a garlic bread side.</p>
+            <div class="d-flex justify-content-between">
+              <span>Price:Rs/= 130</span>
+              <input type="number" class="form-control quantity" placeholder="Qty" min="0">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Food Item 4 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="sandwitch.jpg" class="card-img-top" alt="Sandwich">
+          <div class="card-body">
+            <h5 class="card-title">Sandwich</h5>
+            <p class="card-text">Tasty sandwich with fresh veggies.</p>
+            <div class="d-flex justify-content-between">
+              <span>Price:Rs/= 130</span>
+              <input type="number" class="form-control quantity" placeholder="Qty" min="0">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Food Item 5 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="BURGER.jpg" class="card-img-top" alt="Salad">
+          <div class="card-body">
+            <h5 class="card-title">Burger</h5>
+            <p class="card-text">Healthy salad with fresh ingredients.</p>
+            <div class="d-flex justify-content-between">
+              <span>Price:Rs/= 130</span>
+              <input type="number" class="form-control quantity" placeholder="Qty" min="0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <button id="calculate-total" class="btn btn-success">Calculate Total</button>
+      <button id="reset-order" class="btn btn-warning">Reset</button>
+      <button id="print-invoice" class="btn btn-info">Print Invoice</button>
+    </div>
+    <h3 class="text-center mt-3">Total: Rs<span id="total-bill">0</span></h3>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-white bg-dark py-3">
+    <p>&copy; 2024 TASTY HOTEL | All Rights Reserved</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
